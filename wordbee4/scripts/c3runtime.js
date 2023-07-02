@@ -5041,7 +5041,7 @@ self.C3_ExpressionFuncs = [
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			const v1 = p._GetNode(1).GetVar();
-			return () => ((and("https://stage.mindwars.co.in/apis/mwAPI1/api/v1/dailyChallenge/getAll/csvUploadDC?id=", v0.GetValue()) + "access_token=") + v1.GetValue());
+			return () => ((and("https://stage.mindwars.co.in/apis/mwAPI1/api/v1/dailyChallenge/getAll/csvUploadDC?id=", v0.GetValue()) + "&access_token=") + v1.GetValue());
 		},
 		() => "xyz.json",
 		() => "GET",
